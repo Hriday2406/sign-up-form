@@ -1,0 +1,188 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url('Norse-Bold.otf');
+}
+
+body {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        flex-direction: column;
+    }
+    aside, main {
+        width: 100%;
+    }
+}
+
+aside {
+    height: 100vh;
+    width: 40%;
+    background-image: url('Images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+main {
+    height: 100vh;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: hsl(210, 20%, 95%);
+}
+
+/* Left side */
+
+.logo-box {
+    margin-top: 25vh;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box img {
+    width: 5vw;
+    margin: 1rem 1vw;
+}
+
+.logo-text {
+    font-family: Norse, sans-serif;
+    font-size: 6vw;
+}
+
+#credits {
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    position: absolute;
+    bottom: 12px;
+    left:32%;
+}
+
+#credits a {
+    color: white;
+}
+
+/* Right Side */
+
+.heading-text {
+    padding: 3rem;
+    padding-top: 10rem;
+    padding-top: 17vh;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.italics {
+    font-style: italic;
+} 
+
+#p4 {
+    margin-top: 2rem;
+}
+
+#p5 {
+    background-color: white;
+    padding: 1rem 3rem;
+}
+
+.data {
+    color: hsl(0, 0%, 35%);
+    background-color: white;
+    padding: 0 3rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 150px));
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    row-gap: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+}
+
+label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    display: block;
+}
+
+input {
+    height: 2rem;
+    width: 17rem;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid hsl(240, 100%, 61%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input:invalid {
+    border: 1px solid hsl(0, 80%, 40%);
+}
+
+#mismatch {
+    color: hsl(0, 80%, 40%);
+    font-size: .75rem;
+}
+
+.btn {
+    margin: 2rem 3rem;
+    padding: .75em 2.3em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    background-color: hsl(244, 19%, 55%);
+    border: none;
+    border-radius: 10px;
+}
+
+main a {
+    text-decoration: none;
+    color: hsl(244, 19%, 55%);
+    font-weight: 600;
+}
+
+#p6 {
+    padding-left: 3rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}

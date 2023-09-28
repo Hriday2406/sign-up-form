@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <div class="logo-box">
+            <img src="Images/logo.png" alt="logo">
+            <h1 class="logo-text">HRIDAY</h1>
+        </div>
+        <p id="credits">Photo by <a href="https://unsplash.com/@eberhardgross">Eberhard Grossgasteiger</a> on <a href="https://unsplash.com/photos/a-view-of-a-mountain-range-at-sunset-KJKgvXUMr2U">unsplash</a></p>
+    </aside>
+    <main>
+        <div class="heading-text">
+            <p class="text" id="p1">This is not a real online service! You know you need something <p>
+            <p class="text" id="p2">like this in your life to help you realize your deepest dreams.</p>
+            <p class="text" id="p3">Sign up <span class="italics">now</span > to get started</p>
+            <p class="text" id="p4">You <span class="italics">know</span > you want to.</p>
+        </div>
+        <div class="form">
+            <p class="text" id="p5">Let's do this!</p>
+            <form action="#" method="get">
+                <section class="data">
+                    <!-- <div class="name"> -->
+                        <div class="f-name">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="l-name">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                    <!-- </div> -->
+                    <!-- <div class="email-num"> -->
+                        <div class="email">
+                            <label for="email-ID">EMAIL</label>
+                            <input type="email" name="email-ID" id="email-ID">
+                        </div>
+                        <div class="num">
+                            <label for="number">PHONE NUMBER</label>
+                            <input type="tel" name="number" id="number">
+                        </div>
+                    <!-- </div> -->
+                    <!-- <div class="pass-box"> -->
+                        <div class="pass">
+                            <label for="pass">PASSWORD</label>
+                            <input type="password" name="pass" id="pass" required>
+                            <p id="mismatch">* Passwords do not match</p>
+                        </div>
+                        <div class="cnfrm-pass-box">
+                            <label for="cnfrm-pass">CONFIRM PASSWORD</label>
+                            <input type="password" name="cnfrm-pass" id="cnfrm-pass" required>
+                        </div>
+                    <!-- </div> -->
+                </section>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+            <p class="text" id="p6">Already have an account? <span><a href="#">Log in</a></span> </p>
+        </div>
+    </main>
+</body>
+</html>
