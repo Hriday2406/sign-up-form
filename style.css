@@ -32,17 +32,17 @@ body {
     display: flex;
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 700px){
     body {
         flex-direction: column;
     }
-    aside, main {
-        width: 100%;
+    aside {
+        height: 50vh;
     }
-}
+} */
 
 aside {
-    height: 100vh;
+    min-height: 100vh;
     width: 40%;
     background-image: url('Images/bg.jpg');
     background-position: center;
@@ -51,7 +51,7 @@ aside {
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     width: 60%;
     font-family: 'Roboto', sans-serif;
 
@@ -98,7 +98,6 @@ main {
 
 .heading-text {
     padding: 3rem;
-    padding-top: 10rem;
     padding-top: 17vh;
 }
 
@@ -127,7 +126,6 @@ main {
     padding-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 150px));
-    /* grid-template-rows: 1fr 1fr 1fr; */
     row-gap: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
 }
