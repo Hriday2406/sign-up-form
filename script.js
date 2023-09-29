@@ -1,8 +1,14 @@
+// Selectors
 const password = document.querySelector('#pass');
 const confirmPassword = document.querySelector('#cnfrm-pass');
 const mismatch = document.querySelector('#mismatch');
 
-function checkPassword(e) {
+// State
+
+// On mount
+
+// Handlers
+function checkPassword() {
     if(password.value == '' && confirmPassword.value == ''){
         mismatch.textContent = '';
         mismatch.classList.remove('red-color');
@@ -27,19 +33,8 @@ function checkPassword(e) {
         confirmPassword.classList.add('invalid');
         confirmPassword.classList.remove('valid');
     }
-    // if(e.target.value == ''){
-    //     mismatch.textContent = '';
-    //     mismatch.classList.remove('red-color');
-    //     password.classList.remove('invalid');
-    //     confirmPassword.classList.remove('invalid');
-    // }
-
 }
 
+// Events
 confirmPassword.addEventListener('input', checkPassword);
 password.addEventListener('input', checkPassword);
-
-// createAcc.addEventListener('click', () => {
-
-// });
-

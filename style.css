@@ -23,6 +23,28 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
+/* Utility Classes */
+.italics {
+    font-style: italic;
+} 
+
+.invalid {
+    border-color:hsl(0, 80%, 40%);
+}
+
+.valid {
+    border-color: hsl(120deg 100% 30.14%);
+}
+
+.red-color {
+    color: hsl(0, 80%, 40%);
+}
+
+.green-color {
+    color: hsl(120deg 100% 30.14%);
+}
+/*  */
+
 @font-face {
     font-family: Norse;
     src: url('Norse-Bold.otf');
@@ -98,10 +120,6 @@ main {
     font-weight: 500;
 }
 
-.italics {
-    font-style: italic;
-} 
-
 #p4 {
     margin-top: 2rem;
 }
@@ -145,28 +163,12 @@ input:focus {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* input:invalid {
+input:invalid {
     border: 1px solid hsl(0, 80%, 40%);
-} */
-
-.invalid {
-    border-color:hsl(0, 80%, 40%);
-}
-
-.valid {
-    border-color: hsl(120deg 100% 30.14%);
 }
 
 #mismatch {
     font-size: .75rem;
-}
-
-.red-color {
-    color: hsl(0, 80%, 40%);
-}
-
-.green-color {
-    color: hsl(120deg 100% 30.14%);
 }
 
 .btn {
@@ -178,16 +180,27 @@ input:focus {
     background-color: hsl(244, 19%, 55%);
     border: none;
     border-radius: 10px;
+    transition: all 0.1s ease-in-out;
 }
 
-main a {
-    text-decoration: none;
-    color: hsl(244, 19%, 55%);
-    font-weight: 600;
+.btn:hover {
+    background-color: hsl(246, 17%, 25%);
+    box-shadow: 2px 2px 10px black;
+}
+
+.btn:active {
+    background-color: hsl(244, 19%, 55%);
+    transform: translateY(5px);
 }
 
 #p6 {
     padding-left: 3rem;
     font-size: 1.25rem;
     font-weight: 500;
+}
+
+#p6 a {
+    font-weight: 800;
+    color: hsl(244, 19%, 75%);
+    text-decoration: none;
 }
