@@ -32,15 +32,6 @@ body {
     display: flex;
 }
 
-/* @media only screen and (max-width: 700px){
-    body {
-        flex-direction: column;
-    }
-    aside {
-        height: 50vh;
-    }
-} */
-
 aside {
     min-height: 100vh;
     width: 40%;
@@ -51,11 +42,12 @@ aside {
 }
 
 main {
+    color: white;
     min-height: 100vh;
     width: 60%;
     font-family: 'Roboto', sans-serif;
-
-    background-color: hsl(210, 20%, 95%);
+    /* background-color: hsl(210, 20%, 95%); */
+    background-color: hsl(240deg 12.77% 18.43%);
 }
 
 /* Left side */
@@ -63,7 +55,7 @@ main {
 .logo-box {
     margin-top: 25vh;
     color: white;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: hsla(0, 0%, 0%, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +68,7 @@ main {
 
 .logo-text {
     font-family: Norse, sans-serif;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 #credits {
@@ -87,7 +79,7 @@ main {
     color: white;
     position: absolute;
     bottom: 12px;
-    left:32%;
+    left:12.5vw;
 }
 
 #credits a {
@@ -115,13 +107,13 @@ main {
 }
 
 #p5 {
-    background-color: white;
+    background-color: #37354a;
     padding: 1rem 3rem;
 }
 
 .data {
-    color: hsl(0, 0%, 35%);
-    background-color: white;
+    color: hsl(0, 0%, 70%);
+    background-color: #37354a;
     padding: 0 3rem;
     padding-bottom: 2rem;
     display: grid;
@@ -143,23 +135,38 @@ input {
     padding: .5rem;
     font-size: 1rem;
     font-weight: 300;
-    border: 1px solid hsl(0, 0%, 80%);
+    border: 2px solid #ffffff;
     border-radius: 5px;
     outline: none;
 }
 
 input:focus {
-    border: 1px solid hsl(240, 100%, 61%);
+    border-color: hsl(240, 100%, 76%);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-input:invalid {
+/* input:invalid {
     border: 1px solid hsl(0, 80%, 40%);
+} */
+
+.invalid {
+    border-color:hsl(0, 80%, 40%);
+}
+
+.valid {
+    border-color: hsl(120deg 100% 30.14%);
 }
 
 #mismatch {
-    color: hsl(0, 80%, 40%);
     font-size: .75rem;
+}
+
+.red-color {
+    color: hsl(0, 80%, 40%);
+}
+
+.green-color {
+    color: hsl(120deg 100% 30.14%);
 }
 
 .btn {
