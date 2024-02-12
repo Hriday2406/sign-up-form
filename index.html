@@ -31,28 +31,40 @@
                 <section class="data">
                     <div class="f-name">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
                     <div class="l-name">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </div>
                     <div class="email">
                         <label for="email-ID">EMAIL</label>
-                        <input type="email" name="email-ID" id="email-ID">
+                        <input type="text" name="email-ID" id="email-ID" required>
+                        <p class="mismatch"> </p>
                     </div>
                     <div class="num">
                         <label for="number">PHONE NUMBER</label>
-                        <input type="tel" name="number" id="number" pattern="[0-9]{10}">
+                        <input type="text" name="number" id="number" required> <!--  pattern="[0-9]{10}" -->
+                        <p class="mismatch"> </p>
+                    </div>
+                    <div class="country">
+                        <label for="country">COUNTRY</label>
+                        <input type="text" name="country" id="country" required>
+                        <p class="mismatch"> </p>
+                    </div>
+                    <div class="pin">
+                        <label for="pin-code">PINCODE</label>
+                        <input type="text" name="pin-code" id="pin-code" required> 
+                        <p class="mismatch"> </p>
                     </div>
                     <div class="pass">
                         <label for="pass">PASSWORD</label>
-                        <input type="password" name="pass" id="pass">
-                        <p id="mismatch"> </p>
+                        <input type="password" name="pass" id="pass" required>
+                        <p class="mismatch"> </p>
                     </div>
                     <div class="cnfrm-pass-box">
                         <label for="cnfrm-pass">CONFIRM PASSWORD</label>
-                        <input type="password" name="cnfrm-pass" id="cnfrm-pass">
+                        <input type="password" name="cnfrm-pass" id="cnfrm-pass" required>
                     </div>
                 </section>
                 <button type="submit" class="btn" id="submitButton">Create Account</button>

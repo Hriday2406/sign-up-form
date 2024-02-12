@@ -51,11 +51,11 @@ time, mark, audio, video {
 }
 
 body {
+    min-height: 100vh;
     display: flex;
 }
 
 aside {
-    min-height: 100vh;
     width: 40%;
     background-image: url('Images/bg.jpg');
     background-position: center;
@@ -65,11 +65,12 @@ aside {
 
 main {
     color: white;
-    min-height: 100vh;
     width: 60%;
     font-family: 'Roboto', sans-serif;
-    /* background-color: hsl(210, 20%, 95%); */
     background-color: hsl(240deg 12.77% 18.43%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Left side */
@@ -112,7 +113,7 @@ main {
 
 .heading-text {
     padding: 3rem;
-    padding-top: 17vh;
+    padding-top: 0px;
 }
 
 .text {
@@ -163,12 +164,22 @@ input:focus {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-input:invalid {
+/* input:invalid {
     border: 1px solid hsl(0, 80%, 40%);
+} */
+
+/* input:valid {
+    border: 1px solid hsl(120deg 100% 30.14%);
+} */
+
+.f-name,
+.l-name {
+    margin-bottom: 14px;
 }
 
-#mismatch {
+.mismatch {
     font-size: .75rem;
+    height: 1rem;
 }
 
 .btn {
