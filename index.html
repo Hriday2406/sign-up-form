@@ -31,30 +31,32 @@
                 <section class="data">
                     <div class="f-name">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <input type="text" id="first-name" name="first-name" pattern="[A-Za-z]{1,}" required>
+                        <p class="mismatch"> </p>
                     </div>
                     <div class="l-name">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <input type="text" id="last-name" name="last-name" pattern="[A-Za-z]{1,}" required>
+                        <p class="mismatch"> </p>
                     </div>
                     <div class="email">
                         <label for="email-ID">EMAIL</label>
-                        <input type="text" name="email-ID" id="email-ID" required>
+                        <input type="email" name="email-ID" id="email-ID" required>
                         <p class="mismatch"> </p>
                     </div>
                     <div class="num">
                         <label for="number">PHONE NUMBER</label>
-                        <input type="text" name="number" id="number" required> <!--  pattern="[0-9]{10}" -->
+                        <input type="tel" name="number" id="number" pattern="[0-9]{10}" required>
                         <p class="mismatch"> </p>
                     </div>
                     <div class="country">
                         <label for="country">COUNTRY</label>
-                        <input type="text" name="country" id="country" required>
+                        <input type="text" name="country" id="country" pattern="[A-Za-z]{1,}" required>
                         <p class="mismatch"> </p>
                     </div>
                     <div class="pin">
                         <label for="pin-code">PINCODE</label>
-                        <input type="text" name="pin-code" id="pin-code" required> 
+                        <input type="tel" name="pin-code" id="pin-code" pattern="[0-9]{6}" required> 
                         <p class="mismatch"> </p>
                     </div>
                     <div class="pass">

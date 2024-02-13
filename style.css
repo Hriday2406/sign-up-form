@@ -172,10 +172,10 @@ input:focus {
     border: 1px solid hsl(120deg 100% 30.14%);
 } */
 
-.f-name,
+/* .f-name,
 .l-name {
     margin-bottom: 14px;
-}
+} */
 
 .mismatch {
     font-size: .75rem;
