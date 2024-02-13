@@ -32,11 +32,8 @@ country.addEventListener('blur', () => {
 pinCode.addEventListener('blur', () => {
     check(pinCode, pinCodeAlert, 'Pin Code');
 });
-password.addEventListener('blur', () => {
-    checkEmpty(password, passwordAlert, 'Password');
-});
-password.addEventListener('input', checkPassword);
-confirmPassword.addEventListener('input', checkPassword);
+password.addEventListener('blur', checkPassword);
+confirmPassword.addEventListener('blur', checkPassword);
 
 
 function check(node, nodeAlert, nodeName) {
@@ -65,8 +62,12 @@ function checkPassword() {
     password.classList.remove('invalid', 'valid');
     confirmPassword.classList.remove('invalid', 'valid');
     passwordAlert.classList.remove('red-color', 'green-color');
-    if(password.value == '' && confirmPassword.value == '')
-        passwordAlert.textContent = '';
+    if(password.value == '' && confirmPassword.value == ''){
+        passwordAlert.textContent = '* Password can not be empty!';
+        password.classList.add('invalid');
+        confirmPassword.classList.add('invalid');
+        passwordAlert.classList.add('red-color');
+    }
     else {
         if(password.value === confirmPassword.value){
             passwordAlert.textContent = '* Passwords are the same.';
@@ -80,18 +81,5 @@ function checkPassword() {
             confirmPassword.classList.add('invalid');
             passwordAlert.classList.add('red-color');
         }
-    }
-}
-
-function checkEmpty(node, nodeAlert, nodeName) {
-    if(node.value == ''){
-        nodeAlert.textContent = `* ${nodeName} can not be empty!`;
-        node.classList.add('invalid');
-        nodeAlert.classList.add('red-color');
-    }
-    else {
-        nodeAlert.textContent = '';
-        node.classList.remove('invalid');
-        nodeAlert.classList.remove('red-color');
     }
 }

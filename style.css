@@ -164,19 +164,6 @@ input:focus {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* input:invalid {
-    border: 1px solid hsl(0, 80%, 40%);
-} */
-
-/* input:valid {
-    border: 1px solid hsl(120deg 100% 30.14%);
-} */
-
-/* .f-name,
-.l-name {
-    margin-bottom: 14px;
-} */
-
 .mismatch {
     font-size: .75rem;
     height: 1rem;
